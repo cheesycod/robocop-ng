@@ -59,21 +59,19 @@ guild_whitelist = [718563359179669587]  # SecureChat discord
 # Named roles to be used with .approve and .revoke
 # Example: .approve User hacker
 named_roles = {
-    "experienced member": 420010997877833731,
-    "hacker": 364508795038072833,
-    "participant": 434353085926866946,
+    "god": 719797799381762049,
+    "immortal god": 719798012938944572
 }
 
 # The bot manager and staff roles
 # Bot manager can run eval, exit and other destructive commands
 # Staff can run administrative commands
-bot_manager_role_id = 466447265863696394  # Bot management role in ReSwitched
+bot_manager_role_id = 719793550614593599 # Bot management role in SecureChat (Owner)
 staff_role_ids = [
     364647829248933888,  # Team role in ReSwitched
     360138431524765707,  # Mod role in ReSwitched
-    466447265863696394,  # Bot management role in ReSwitched
+    466447265863696394,  # Bot management role in 
     360138163156549632,  # Admin role in ReSwitched
-    287289529986187266,  # Wizard role in ReSwitched
 ]
 
 # Various log channels used to log bot and guild's activity
