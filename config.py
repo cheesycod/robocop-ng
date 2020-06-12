@@ -2,12 +2,12 @@ import hashlib
 import datetime
 
 # Basic bot config, insert your token here, update description if you want
-prefixes = [".", "!"]
+prefixes = ["robo:"]
 token = "token-goes-here"
-bot_description = "Robocop-NG, the moderation bot of ReSwitched."
+bot_description = "Robocop-NG, the moderation bot of SecureChat"
 
 # If you forked robocop-ng, put your repo here
-source_url = "https://github.com/reswitched/robocop-ng"
+source_url = "https://github.com/cheesycod/robocop-ng"
 rules_url = "https://reswitched.team/discord/#rules"
 
 # The bot description to be used in .robocop embed
@@ -39,29 +39,27 @@ initial_cogs = [
     "cogs.robocronp",
     "cogs.meme",
     "cogs.invites",
+    "cogs.pin"
 ]
 
 # The following cogs are also available but aren't loaded by default:
 # cogs.imagemanip - Adds a meme command called .cox.
 # Requires Pillow to be installed with pip.
 # cogs.lists - Allows managing list channels (rules, FAQ) easily through the bot
-# PR'd in at: https://github.com/reswitched/robocop-ng/pull/65
-# cogs.pin - Lets users pin important messages
-# and sends pins above limit to a github gist
 
 
 # Minimum account age required to join the guild
 # If user's account creation is shorter than the time delta given here
 # then user will be kicked and informed
-min_age = datetime.timedelta(minutes=15)
+min_age = datetime.timedelta(minutes=5)
 
 # The bot will only work in these guilds
-guild_whitelist = [269333940928512010]  # ReSwitched discord
+guild_whitelist = [718563359179669587]  # SecureChat discord
 
 # Named roles to be used with .approve and .revoke
 # Example: .approve User hacker
 named_roles = {
-    "community": 420010997877833731,
+    "experienced member": 420010997877833731,
     "hacker": 364508795038072833,
     "participant": 434353085926866946,
 }
